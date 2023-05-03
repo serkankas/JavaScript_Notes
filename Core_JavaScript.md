@@ -7,6 +7,7 @@ Topics:
 
 1. [Running JavaScript](#chapter1)
 1. [Comments](#chapter2)
+1. [Data Types](#chapter3)
 
 <section id="chapter1"></section>
 
@@ -34,3 +35,38 @@ Line
 ```
 
 As the usage clearify, comments are the lines that doesn't compile as program but it will be ignored from the compiler, program, etc.
+
+<section id="chapter3"></section>
+
+> Data Types
+
+Data types is a variety of things that computer can understand, compute and decide based on values.
+
+JavaScript provide 7 mandatory data-type.
+
+1. Undifined
+1. Null
+1. Boolean
+1. String
+1. Symbol
+1. Number
+1. Object
+
+In order to store data type in some memory location in program, we have to use variable. ~~Like in other programming language, etc.~~
+
+```js
+var myName = "Serkan K"
+let phrase = "This is not a Game!"
+const pi = 3.141592
+
+myName = 12
+```
+
+There are three different variable decleration in JavaScript.
+
+|Keyword| Usage Case
+|---|---
+|var| Can be used in anywhere in program
+|let| Can be used inside the scope where you declare. Cannot be used outside of scope.
+| const | Constant, cannot be changed. Unlike var and let.
+
