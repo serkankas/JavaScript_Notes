@@ -3,11 +3,16 @@
 This markdown will contain course content for JavaScript programming. Consider that I am totally beginner for JavaScript language. Some of my examples/syntaxing/logic may not fully correct. I will fix it as soon as I learn the better way.<br>
 With that being said, let's dive into learning JavaScript. Here's the [link](https://www.youtube.com/watch?v=PkZNo7MFNFg) that I follow as main course. Feel free to check it by yourself. 
 
+<hr>
+
 Topics:
 
 1. [Running JavaScript](#chapter1)
 1. [Comments](#chapter2)
 1. [Data Types](#chapter3)
+1. [Assignment Operator](#chapter4)
+
+<hr>
 
 <section id="chapter1"></section>
 
@@ -70,3 +75,27 @@ There are three different variable decleration in JavaScript.
 |let| Can be used inside the scope where you declare. Cannot be used outside of scope.
 | const | Constant, cannot be changed. Unlike var and let.
 
+<section id="chapter4"></section>
+
+> Assignment Operator
+
+There is a difference between declaration and assignment for variable. What is the difference you may ask. Assignment is set a variable with a variable-name without declare any type for it. Where as decleration, is setting/assigning variable with corresponded data type declaring with it. Honestly, I do not focus on that the topic that much since, you get used to use as you wish, doesn't matter what is what at the end of the day. If you wish, you can read the [article](https://makersaid.com/declare-vs-assign-in-javascript/#:~:text=The%20Difference%20Between%20Declaring%20and,to%20give%20it%20a%20value.) about it.
+
+```js
+var assignment;         // Assignment
+var declaration = 5;    // Assignment and Declaration
+
+declaration = 10;       // Declaration
+```
+
+You may realize that I do use semicolon to end line. This is __NOT__ required but recommended way to end the line.
+
+Before we end this session, I will give function that will act like print function for other programming language. Which is ```console.log();```. This is function that we use for debugging purpose printing screen. It will be used alot in this series.
+
+```js
+console.log("This is a text");
+
+var a = "Other text";
+
+console.log(a);
+```
