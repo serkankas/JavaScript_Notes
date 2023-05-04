@@ -108,3 +108,18 @@ console.log(a);
 JavaScript, like most of the programming language, is case sensitive for function/variable names.
 
 For the people who don't know what that mean is, that means ```variableName != VariAbleName```. I do suggest that pick one or two different variable naming style and keep following that structure for your whole project. It will make your code easy to follow and make more readable. Here is a [link](https://www.theserverside.com/feature/A-guide-to-common-variable-naming-conventions) that you can check for conventional ones.
+
+<section id="chapter6"></section>
+
+> Arithmetic Operators
+
+| Symbol | Application
+| -- | --
+| + | Addition
+| - | Subtraction
+| * | Multiplication
+| / | Division
+| % | Modulus (Reminder)
+| ** | Exponentiation
+| ++ | Increment
+| -- | Decrement 
