@@ -11,6 +11,7 @@ Topics:
 1. [Comments](#chapter2)
 1. [Data Types](#chapter3)
 1. [Assignment Operator](#chapter4)
+1. [Case Sensitivity](#chapter5)
 
 <hr>
 
@@ -82,10 +83,10 @@ There are three different variable decleration in JavaScript.
 There is a difference between declaration and assignment for variable. What is the difference you may ask. Assignment is set a variable with a variable-name without declare any type for it. Where as decleration, is setting/assigning variable with corresponded data type declaring with it. Honestly, I do not focus on that the topic that much since, you get used to use as you wish, doesn't matter what is what at the end of the day. If you wish, you can read the [article](https://makersaid.com/declare-vs-assign-in-javascript/#:~:text=The%20Difference%20Between%20Declaring%20and,to%20give%20it%20a%20value.) about it.
 
 ```js
-var assignment;         // Assignment
-var declaration = 5;    // Assignment and Declaration
+var assignment;         // Declaration
+var declaration = 5;    // Declaration & Assignment
 
-declaration = 10;       // Declaration
+declaration = 10;       // Assignment
 ```
 
 You may realize that I do use semicolon to end line. This is __NOT__ required but recommended way to end the line.
@@ -99,3 +100,11 @@ var a = "Other text";
 
 console.log(a);
 ```
+
+<section id="chapter5"></section>
+
+> Case Sensitivity
+
+JavaScript, like most of the programming language, is case sensitive for function/variable names.
+
+For the people who don't know what that mean is, that means ```variableName != VariAbleName```. I do suggest that pick one or two different variable naming style and keep following that structure for your whole project. It will make your code easy to follow and make more readable. Here is a [link](https://www.theserverside.com/feature/A-guide-to-common-variable-naming-conventions) that you can check for conventional ones.
