@@ -12,6 +12,10 @@ Topics:
 1. [Data Types](#chapter3)
 1. [Assignment Operator](#chapter4)
 1. [Case Sensitivity](#chapter5)
+1. [Arithmetic Operator](#chapter6)
+1. [Logical Operator](#chapter7)
+1. [Assignment Operators](#chapter8)
+
 
 <hr>
 
@@ -138,3 +142,17 @@ For the people who don't know what that mean is, that means ```variableName != V
 | < | Less than
 | >= | Greater than or equal to
 | <= | Less than or equal to
+
+<section id="chapter8"></section>
+
+> Assignment Operators
+
+| Operator | Example Usage | Meaning of
+| -- | -- | --
+| = | x = y | x = y
+| += | x += y | x = x + y
+| -= | x -= y | x = x - y
+| *= | x *= y | x = x * y
+| /= | x /= y | x = x / y
+| %= | x %= y | x = x % y
+| **= | x **= y | x = x ** y
