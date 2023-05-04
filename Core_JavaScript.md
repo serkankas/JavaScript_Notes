@@ -122,4 +122,19 @@ For the people who don't know what that mean is, that means ```variableName != V
 | % | Modulus (Reminder)
 | ** | Exponentiation
 | ++ | Increment
-| -- | Decrement 
+| -- | Decrement
+
+<section id="chapter7"></section>
+
+> Logical Operators
+
+| Symbol | Application
+| -- | --
+| == | Equal to
+| === | Equal to & same type checker
+| != | Not equal to
+| !== | Not equal to | Not same type checker
+| > | Greater than
+| < | Less than
+| >= | Greater than or equal to
+| <= | Less than or equal to
