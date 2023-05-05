@@ -14,7 +14,8 @@ Topics:
 1. [Case Sensitivity](#chapter5)
 1. [Arithmetic Operator](#chapter6)
 1. [Logical Operator](#chapter7)
-1. [Assignment Operators](#chapter8)
+1. [Shift & Bitwise Operators](#chapter8)
+1. [Arithmetic Assignment Operators](#chapter9)
 
 
 <hr>
@@ -145,7 +146,38 @@ For the people who don't know what that mean is, that means ```variableName != V
 
 <section id="chapter8"></section>
 
-> Assignment Operators
+> Shift & Bitwise Operators
+
+| Operator | Name | Description
+| -- | -- | --
+| & | AND | Set result to one if both bits are 1
+| \| | OR | Set result to one if any of the bit is 1
+| ^ | XOR | Set result to one if one of two bit is 1
+| ~ | NOT | Invert the bit
+| >> | Left Shift | Shift left by pushing zero from the right, going to lose leftmost bits.
+| << | Right Shift | Shift right by pushing zero from left, going to lose rightmost bits.
+| >>> | Right shift without sign | __I do not clearly understand what it does, may be check and fixed it later!__
+
+I believe the example in [link](https://www.w3schools.com/js/js_bitwise.asp) is a bit clearer.
+
+```js
+// Example in 32 bit.
+
+// 5            00000000 00000000 00000000 00000101
+// 5 >> 1       00000000 00000000 00000000 00000010 (2)
+// 5 >>> 1      00000000 00000000 00000000 00000010 (2)
+
+// -5           11111111 11111111 11111111 11111011
+// -5 >> 1      11111111 11111111 11111111 11111101 (-3)
+// -5 >>> 1     01111111 11111111 11111111 11111101 (2147483645)
+// -5 >>> 2     00111111 11111111 11111111 11111110 (1073741822)
+```
+
+So __>>>__ is still right shift, but it behave different for unsigned numbers. Usage is different in negative integer values.
+
+<section id="chapter9"></section>
+
+> Arithmetic Assignment Operators
 
 | Operator | Example Usage | Meaning of
 | -- | -- | --
