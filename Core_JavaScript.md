@@ -17,6 +17,7 @@ Topics:
 1. [Shift & Bitwise Operators](#chapter8)
 1. [Arithmetic Assignment Operators](#chapter9)
 1. [Escape Character](#chapter10)
+1. [String Identification](#chapter11)
 
 
 <hr>
@@ -190,7 +191,6 @@ So __>>>__ is still right shift, but it behave different for unsigned numbers. U
 | %= | x %= y | x = x % y
 | **= | x **= y | x = x ** y
 
-
 <section id="chapter10"></section>
 
 > Escape Character
@@ -219,3 +219,16 @@ Escape character is __backslash \\__ . Here's the some example usage of escape c
 | \t | | Horizontal Tabulator
 | \v | | Vertical Tabulator
 
+<section id="chapter11"></section>
+
+> String Identification
+
+We already saw the string container for variable. Now we have variety way to contain string for variable. Here's the examples.
+
+```js
+var string_1 = "String with Double Quote";
+var string_2 = 'String with Single Quote';
+var string_3 = `String with Back Quote`;
+```
+
+That's just a way of preference. Of course there are certain advantages of each style since you can use less escape character for each. However, not that much of a difference.
