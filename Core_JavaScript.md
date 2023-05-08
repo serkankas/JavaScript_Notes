@@ -16,6 +16,7 @@ Topics:
 1. [Logical Operator](#chapter7)
 1. [Shift & Bitwise Operators](#chapter8)
 1. [Arithmetic Assignment Operators](#chapter9)
+1. [Escape Character](#chapter10)
 
 
 <hr>
@@ -188,3 +189,33 @@ So __>>>__ is still right shift, but it behave different for unsigned numbers. U
 | /= | x /= y | x = x / y
 | %= | x %= y | x = x % y
 | **= | x **= y | x = x ** y
+
+
+<section id="chapter10"></section>
+
+> Escape Character
+
+```js
+var myString = "I am a "double quoted" string that inside " double quotes"";
+```
+
+As you can see in here, the __"__ double quote is a identifier where the string starts and ends. However, if you wish to use your double quote in string, you should use the escape character to prevent the string breakage.
+
+```js
+var myString = "I am a \" double quoted\" string that inside the \" double quotes\""
+```
+
+Escape character is __backslash \\__ . Here's the some example usage of escape character and using case.
+
+|Code | View | Description
+| -- | -- | --
+| \\' | ' | Single Quote
+| \\" | " | Double Quote
+| \\\\ | \\ | Backslash
+| \b | | Backspace
+| \f | | Form Feed
+| \n | | New Line
+| \r | | Carriage Return
+| \t | | Horizontal Tabulator
+| \v | | Vertical Tabulator
+
