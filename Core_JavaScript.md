@@ -17,10 +17,11 @@ Topics:
 1. [Shift & Bitwise Operators](#chapter8)
 1. [Arithmetic Assignment Operators](#chapter9)
 1. [Shift Assignment Operators](#chapter10)
-1. [Bitwise Assignment Operators](#chapter 11)
+1. [Bitwise Assignment Operators](#chapter11)
 1. [Logical Assignment Operators](#chapter12)
 1. [Escape Character](#chapter13)
 1. [String Identification](#chapter14)
+1. [String Operations](#chapter15)
 
 
 <hr>
@@ -265,3 +266,41 @@ var string_3 = `String with Back Quote`;
 ```
 
 That's just a way of preference. Of course there are certain advantages of each style since you can use less escape character for each. However, not that much of a difference.
+
+<section id="chapter15"></section>
+
+> String Operations
+
+Finding the length of a string is one of the most used pre-function in programming. As we already learn by now is, string is a character array. And we may interested with how many character its contained in that string. In java script it is easy to find that via
+
+```js
+var myStr = "This is a testing script for length!";
+console.log(myStr.length)
+// 36
+```
+
+Apart from it, we can capture the character with given indexes like so
+
+```js
+var myStr = "This is a testing script for length!";
+
+console.log(myStr[1])
+// h
+console.log(myStr[myStr.length - 4])
+// g
+```
+
+From here we may confused like how the first character return __h__. Well this is because arrays start from 0 instead of 1. Which means when you type ```myStr[1]``` it's actually looking for the second letter/character in that string. There is no -1 index in array (for some reason. IDK), but we can access with length function and declaring from that.
+
+Another unique future in JavaScript is individual characters are immutable in JavaScript. This is not the case in Python for example. I saw it first time in here. Here's an example of what I ment
+
+```js
+var myString = "Jello World";
+myString[0] = "H";
+console.log(myString)
+// Jello World
+
+myString = "Hello World";
+console.log(myString)
+// Hello World
+```
