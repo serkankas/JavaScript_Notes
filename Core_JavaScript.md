@@ -211,6 +211,16 @@ So __>>>__ is still right shift, but it behave different for unsigned numbers. U
 | ^= | x ^= y | x = x ^ y
 | |= | x |= y | x = x | y
 
+<section id="chapter10"></section>
+
+> Logical Assigment Operators
+
+| Operator | Example Usage | Meaning of
+| -- | -- | --
+| &&= | x &&= y | x = x && (x = y)
+| ||= | x ||= y | x = x || (x = y)
+| ??= | x ??= y | x = x ?? (x = y)
+
 <section id="chapter11"></section>
 
 > Escape Character
