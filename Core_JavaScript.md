@@ -22,6 +22,7 @@ Topics:
 1. [Escape Character](#chapter13)
 1. [String Identification](#chapter14)
 1. [String Operations](#chapter15)
+1. [Array Declaration](#chapter16)
 
 
 <hr>
@@ -303,4 +304,21 @@ console.log(myString)
 myString = "Hello World";
 console.log(myString)
 // Hello World
+```
+
+<section id="chapter16"></section>
+
+> Array Declaration
+
+We already talk about array chars, _aka string_. But we didn't do any specific or complex array declaration for our data types. Arrays are ordered containers that can have one or more data type in it. You can store either singular or multiple data type in it.
+
+```js
+var myArray = ["John", "Doe", 25, "example@mail.com", True];
+```
+
+For this simple example, we can store any person firstname, lastname, age, mail and record(as boolean) at same array without any problem. But if doesn't required, we usually use same type data in one array for easier application like
+
+```js
+var strArray = ["Test", "Array", "Contains", "String"];
+var intArray = [123, 234, 345, 456];
 ```
