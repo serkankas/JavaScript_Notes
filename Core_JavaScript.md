@@ -24,6 +24,7 @@ Topics:
 1. [String Operations](#chapter15)
 1. [Array Declaration](#chapter16)
 1. [Nested Arrays](#chapter17)
+1. [Accessing Array Element and Manipulating](#chapter18)
 
 <hr>
 
@@ -323,7 +324,7 @@ var strArray = ["Test", "Array", "Contains", "String"];
 var intArray = [123, 234, 345, 456];
 ```
 
-<section id="chapter16"></section>
+<section id="chapter17"></section>
 
 > Nested Array Declaration
 
@@ -343,3 +344,18 @@ console.log(myArray[1][3]);
 // a
 ```
 
+<section id="chapter18"></section>
+
+> Accessing Array Element and Manipulating
+
+Unlike strings, array elements can be changable with accessing individual characters.
+
+```js
+var testArray = [1, 3, 3, 4, 5];
+testArray[1] = 2;
+
+console.log(testArray);
+// (5) [1, 2, 3, 4, 5]
+```
+
+That shown __(5)__ is length of array. This is related with the platfor you use for development. You may or may not see this future on your applied platform.
