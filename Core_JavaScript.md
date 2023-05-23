@@ -23,7 +23,7 @@ Topics:
 1. [String Identification](#chapter14)
 1. [String Operations](#chapter15)
 1. [Array Declaration](#chapter16)
-
+1. [Nested Arrays](#chapter17)
 
 <hr>
 
@@ -322,3 +322,24 @@ For this simple example, we can store any person firstname, lastname, age, mail 
 var strArray = ["Test", "Array", "Contains", "String"];
 var intArray = [123, 234, 345, 456];
 ```
+
+<section id="chapter16"></section>
+
+> Nested Array Declaration
+
+Nested arrays are simply array inside the arrays.
+
+```js
+var nestedArray = [[1,2,3], [4,5,6], [7,8,9], ['*', 0, '#']]
+console.log(nestedArray[1][1]);
+// 5
+```
+
+Also, we can consider the string arrays as nested arrays since the strings are already char arrays.
+
+```js
+var myArray = ["test", "array"];
+console.log(myArray[1][3]);
+// a
+```
+
