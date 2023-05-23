@@ -193,6 +193,16 @@ So __>>>__ is still right shift, but it behave different for unsigned numbers. U
 
 <section id="chapter10"></section>
 
+> Shift Assignment Operators
+
+| Operator | Example Usage | Meaning of
+| -- | -- | --
+| <<= | x <<= y | x = x << y
+| >>= | x >>= y | x = x >> y
+| >>>= | x >>>= y | x = x >>> y
+
+<section id="chapter11"></section>
+
 > Escape Character
 
 ```js
@@ -219,7 +229,7 @@ Escape character is __backslash \\__ . Here's the some example usage of escape c
 | \t | | Horizontal Tabulator
 | \v | | Vertical Tabulator
 
-<section id="chapter11"></section>
+<section id="chapter12"></section>
 
 > String Identification
 
