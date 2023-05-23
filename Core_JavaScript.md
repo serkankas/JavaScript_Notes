@@ -16,8 +16,11 @@ Topics:
 1. [Logical Operator](#chapter7)
 1. [Shift & Bitwise Operators](#chapter8)
 1. [Arithmetic Assignment Operators](#chapter9)
-1. [Escape Character](#chapter10)
-1. [String Identification](#chapter11)
+1. [Shift Assignment Operators](#chapter10)
+1. [Bitwise Assignment Operators](#chapter 11)
+1. [Logical Assignment Operators](#chapter12)
+1. [Escape Character](#chapter13)
+1. [String Identification](#chapter14)
 
 
 <hr>
@@ -201,7 +204,7 @@ So __>>>__ is still right shift, but it behave different for unsigned numbers. U
 | >>= | x >>= y | x = x >> y
 | >>>= | x >>>= y | x = x >>> y
 
-<section id="chapter10"></section>
+<section id="chapter11"></section>
 
 > Bitwise Assigment Operators
 
@@ -211,7 +214,7 @@ So __>>>__ is still right shift, but it behave different for unsigned numbers. U
 | ^= | x ^= y | x = x ^ y
 | |= | x |= y | x = x | y
 
-<section id="chapter10"></section>
+<section id="chapter12"></section>
 
 > Logical Assigment Operators
 
@@ -221,7 +224,7 @@ So __>>>__ is still right shift, but it behave different for unsigned numbers. U
 | ||= | x ||= y | x = x || (x = y)
 | ??= | x ??= y | x = x ?? (x = y)
 
-<section id="chapter11"></section>
+<section id="chapter13"></section>
 
 > Escape Character
 
@@ -249,7 +252,7 @@ Escape character is __backslash \\__ . Here's the some example usage of escape c
 | \t | | Horizontal Tabulator
 | \v | | Vertical Tabulator
 
-<section id="chapter12"></section>
+<section id="chapter14"></section>
 
 > String Identification
 
