@@ -280,7 +280,7 @@ Finding the length of a string is one of the most used pre-function in programmi
 
 ```js
 var myStr = "This is a testing script for length!";
-console.log(myStr.length)
+console.log(myStr.length);
 // 36
 ```
 
@@ -289,9 +289,9 @@ Apart from it, we can capture the character with given indexes like so
 ```js
 var myStr = "This is a testing script for length!";
 
-console.log(myStr[1])
+console.log(myStr[1]);
 // h
-console.log(myStr[myStr.length - 4])
+console.log(myStr[myStr.length - 4]);
 // g
 ```
 
@@ -302,11 +302,11 @@ Another unique future in JavaScript is individual characters are immutable in Ja
 ```js
 var myString = "Jello World";
 myString[0] = "H";
-console.log(myString)
+console.log(myString);
 // Jello World
 
 myString = "Hello World";
-console.log(myString)
+console.log(myString);
 // Hello World
 ```
 
@@ -334,7 +334,7 @@ var intArray = [123, 234, 345, 456];
 Nested arrays are simply array inside the arrays.
 
 ```js
-var nestedArray = [[1,2,3], [4,5,6], [7,8,9], ['*', 0, '#']]
+var nestedArray = [[1,2,3], [4,5,6], [7,8,9], ['*', 0, '#']];
 console.log(nestedArray[1][1]);
 // 5
 ```
@@ -381,12 +381,12 @@ removedData = myArray.pop();
 console.log(removedData);
 // Pear
 
-shiftedData = myArray.shift()
-console.log(shiftedData)
+shiftedData = myArray.shift();
+console.log(shiftedData);
 // Banana
 
-myArray.unshift("Pear")
-console.log(myArray)
+myArray.unshift("Pear");
+console.log(myArray);
 // ["Pear", "Apple"]
 ```
 
@@ -420,24 +420,25 @@ With short explanation, function keyword is using for definition of a function. 
 There is a concept that global and local variables. With words, local variable is only accessible in scope/block that's been written. On the other hand, global can be accessable from everywhere.
 
 ```js
-var globalName = "Test 3"
+var globalName = "Test 3";
 
 function isItGlobal(){
-  let nameVar = "Test 1"
+  let nameVar = "Test 1";
   console.log(nameVar);
   console.log(globalName);
 }
 
 function nonGlobalScope(){
-  let localVar = "Test 4"
+  let localVar = "Test 4";
   console.log(nameVar);
 }
 
-let nameVar = "Test 2"
+let nameVar = "Test 2";
 isItGlobal();
 nonGlobalScope();
 console.log(nameVar);
 console.log(globalName);
+console.log(isThisOneGlobal);
 console.log(localVar);
 
 /* Output in Order
@@ -446,6 +447,7 @@ Test 3
 Test 2
 Test 2
 Test 3
+Test 5
 ReferenceError: localVar is not defined
 */
 ```
@@ -457,4 +459,5 @@ We already mention about difference [between let and var](https://sentry.io/answ
 1. Test 2 -> This output comes from global declared variable inside the main javascript file. But called inside the __nonGlobalScope__ function.
 1. Test 2 -> This one is captured from main javascript file. As you can see here, global variable nameVar doesn't manipulated from __isItGlobal__ function.
 1. Test 3 -> This output captured from main javascript file with declaration in global scope.
+1. Test 5 -> We declare this one without keyword of var/let which makes this variable global accessable for every functions.
 1. Reference Error -> This one gives error since there is no __localVar__ definition in main javascript. Which mean local variable is out of scope.
