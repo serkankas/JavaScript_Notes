@@ -25,6 +25,7 @@ Topics:
 1. [Array Declaration](#chapter16)
 1. [Nested Arrays](#chapter17)
 1. [Accessing Array Element and Manipulating](#chapter18)
+1. [Manipulating Arrays with Push, Pop, Shift and Unshift Functions](#chapter19)
 
 <hr>
 
@@ -359,3 +360,32 @@ console.log(testArray);
 ```
 
 That shown __(5)__ is length of array. This is related with the platfor you use for development. You may or may not see this future on your applied platform.
+
+<section id="chapter19"></section>
+
+> Manipulating Arrays with Push, Pop, Shift and Unshift Functions
+
+There is usefull functions to add and remove manipulations to array.
+
+```js
+var myArray = ['Banana', 'Apple'];
+var poppedData;
+var shiftedData;
+myArray.push('Pear');
+console.log(myArray);
+// ["Banana", "Apple", "Pear"]
+
+removedData = myArray.pop();
+console.log(removedData);
+// Pear
+
+shiftedData = myArray.shift()
+console.log(shiftedData)
+// Banana
+
+myArray.unshift("Pear")
+console.log(myArray)
+// ["Pear", "Apple"]
+```
+
+If push using for adding new element, it will add to right placed (to last), or using pop to remove element it will remove the last item. You can also capture the popped item like in example. Shift function is similar to pop function, but now it's removing left placed (the first) item and it's also capturable like in example. Adding item to first place is also applicable with the function of unshift. The naming is a bit strange, but basically you can add first item to you array with unshift function like in example.
