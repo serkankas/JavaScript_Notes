@@ -27,6 +27,7 @@ Topics:
 1. [Accessing Array Element and Manipulating](#chapter18)
 1. [Manipulating Arrays with Push, Pop, Shift and Unshift Functions](#chapter19)
 1. [Creating own functions](#chapter20)
+1. [Local and Global scopes for variables.](#chapter21)
 
 <hr>
 
@@ -411,3 +412,49 @@ sayHelloTo("Julia");
 ```
 
 With short explanation, function keyword is using for definition of a function. Next we give our function a name, in this case __sayHelloTo__ is our function name. And we passed one parameter function use that parameter inside our function.
+
+<section id="chapter21"></section>
+
+> Local and Global scopes for variables.
+
+There is a concept that global and local variables. With words, local variable is only accessible in scope/block that's been written. On the other hand, global can be accessable from everywhere.
+
+```js
+var globalName = "Test 3"
+
+function isItGlobal(){
+  let nameVar = "Test 1"
+  console.log(nameVar);
+  console.log(globalName);
+}
+
+function nonGlobalScope(){
+  let localVar = "Test 4"
+  console.log(nameVar);
+}
+
+let nameVar = "Test 2"
+isItGlobal();
+nonGlobalScope();
+console.log(nameVar);
+console.log(globalName);
+console.log(localVar);
+
+/* Output in Order
+Test 1
+Test 3
+Test 2
+Test 2
+Test 3
+ReferenceError: localVar is not defined
+*/
+```
+
+We already mention about difference [between let and var](https://sentry.io/answers/difference-between-let-and-var-in-javascript/#:~:text=The%20difference%20between%20let%20and,in%20which%20they're%20declared.) in previous [section](#chapter3). Example may conusing but I would like to address it in order
+
+1. Test 1 -> This output come from local variable inside the __isItGlobal__ function.
+1. Test 3 -> This output come from global variable inside the __isItGlobal__ function.
+1. Test 2 -> This output comes from global declared variable inside the main javascript file. But called inside the __nonGlobalScope__ function.
+1. Test 2 -> This one is captured from main javascript file. As you can see here, global variable nameVar doesn't manipulated from __isItGlobal__ function.
+1. Test 3 -> This output captured from main javascript file with declaration in global scope.
+1. Reference Error -> This one gives error since there is no __localVar__ definition in main javascript. Which mean local variable is out of scope.
