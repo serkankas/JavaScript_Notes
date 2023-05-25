@@ -26,6 +26,7 @@ Topics:
 1. [Nested Arrays](#chapter17)
 1. [Accessing Array Element and Manipulating](#chapter18)
 1. [Manipulating Arrays with Push, Pop, Shift and Unshift Functions](#chapter19)
+1. [Creating own functions](#chapter20)
 
 <hr>
 
@@ -389,3 +390,24 @@ console.log(myArray)
 ```
 
 If push using for adding new element, it will add to right placed (to last), or using pop to remove element it will remove the last item. You can also capture the popped item like in example. Shift function is similar to pop function, but now it's removing left placed (the first) item and it's also capturable like in example. Adding item to first place is also applicable with the function of unshift. The naming is a bit strange, but basically you can add first item to you array with unshift function like in example.
+
+<section id="chapter20"></section>
+
+> Creating own functions
+
+In programming, it's vary common to use your own custom functions. It's a best practice to make your code DRY - [Don't Repeat Yourself](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself).
+
+```js
+function sayHelloTo(name){
+  console.log("Hello to you " + name);
+}
+
+sayHelloTo("Jack");
+sayHelloTo("John");
+sayHelloTo("Julia");
+// Hello to you Jack
+// Hello to you John
+// Hello to you Julia
+```
+
+With short explanation, function keyword is using for definition of a function. Next we give our function a name, in this case __sayHelloTo__ is our function name. And we passed one parameter function use that parameter inside our function.
